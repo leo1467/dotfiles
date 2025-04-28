@@ -1,0 +1,11 @@
+{
+  "clangd.path": "/usr/local/bin/clangd-17",
+  "clangd.arguments": [
+    "--header-insertion=never",
+    "--inlay-hints=false"
+  ],
+  "clangd.inlayHints.enable": false,
+  "signature.enable": true,
+  "signature.triggerCharacters": ["(", ","]
+}
+
