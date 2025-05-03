@@ -20,8 +20,6 @@ set cursorline
 set wrap
 set nohlsearch
 set incsearch
-"set termguicolors
-set background=dark
 
 "============================
 " 縮排與格式
@@ -72,7 +70,23 @@ Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-clang-format'
 
+Plug 'tomasiser/vim-code-dark'
+
+
 call plug#end()
+
+"set termguicolors
+set background=dark
+"set t_Co=256
+syntax enable
+colorscheme codedark
+
+" 使用 terminal 預設背景（避免 Vim 強制背景色）
+highlight Normal guibg=NONE ctermbg=NONE
+highlight NonText guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
+
+
 
 "============================
 " coc.nvim 設定 (for C/C++)

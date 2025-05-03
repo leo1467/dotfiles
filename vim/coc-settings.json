@@ -1,3 +1,19 @@
 {
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd"
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd",
+  "semanticTokens.highlightGroups": {
+    "variable": "Identifier",
+    "function": "Function",
+    "parameter": "Identifier",
+    "property": "Identifier",
+    "type": "Type",
+    "enumMember": "Constant"
+  },
+  "semanticTokens.enable": true,
+  "clangd.arguments": [
+  "--header-insertion=never",
+  "--clang-tidy",
+  "--all-scopes-completion",
+  "--background-index",
+  "--log=error"
+  ]
 }
