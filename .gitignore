@@ -1,13 +1,14 @@
 # Ignore Vim plugin folder
-.vim/plugged/
+vim/plugged/
 
 # Ignore coc.nvim extensions (Node.js modules)
-.config/coc/extensions/
+config/coc/extensions/
 
 # Ignore any cache files
-.cache/
-.vscode-server/
+cache/
+vscode-server/
 
 # Ignore system file
 .DS_Store
 
+bak
